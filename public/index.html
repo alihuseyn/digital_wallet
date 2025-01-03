@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Integration</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://pay.google.com/gp/p/js/pay.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="payment-card">
+            <h1>Complete Payment</h1>
+            <div class="amount">
+                <span>Amount:</span>
+                <h2>$1.00 USD</h2>
+            </div>
+            <div class="payment-methods">
+                <div id="google-pay-button" class="payment-button hidden"></div>
+                <div id="apple-pay-button" class="payment-button hidden"></div>
+            </div>
+            <div id="payment-status" class="payment-status"></div>
+        </div>
+    </div>
+    <script src="/js/payment.js"></script>
+</body>
+</html>
